@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .project-title {
+            text-align: center;
+        }
+        
+        .project-description {
+            margin-top: 20px;
+        }
 
+        .project-overview {
+            text-align: justify;
+
+        }
+        .project-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        }
+
+        th, td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+        } 
+  
+        thead {
+        background-color: #f2f2f2;
+        }
+  
+        tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+        }
+  
+        tbody tr:hover {
+        background-color: #f1f1f1;
+        }
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="project-title"> Project: Deploying a Kubernetes Cluster with Kind on AWS EC2 to Host Containerized Applications </h1>
+        <div class="project-description">
+                        <p>
+                            <b>Project Overview</b><br>
+                        <div class="project-overview">
+                            This project involves setting up a containerized application using Kubernetes (K8s) on an Amazon Linux-based EC2 instance.
+                            The deployment process leverages Kind (Kubernetes-in-Docker) to create a lightweight K8s cluster, enabling seamless container
+                            orchestration. The application consists of two microservices—Cats and Dogs—which will be deployed using Kubernetes manifests, 
+                            including pods, replica sets, deployments, and services. The applications are exposed using NodePort services to ensure external 
+                            accessibility.
+                            
+                            Additionally, Amazon Elastic Container Registry (ECR) is used for secure storage of container images, 
+                            and AWS Identity and Access Management (IAM) ensures proper access control for the EC2 instance. 
+                            Terraform is optionally utilized for infrastructure automation. <br><br>
+                        </div>
+
+                            <table>
+                                <thead>
+                                  <tr>
+                                    <th>Technology</th>
+                                    <th>Purpose</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Amazon EC2</td>
+                                    <td>Hosts the Kubernetes cluster and containerized applications</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Kind</td>
+                                    <td>Deploys a lightweight Kubernetes cluster on EC2</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Kubectl</td>
+                                    <td>CLI tool to manage Kubernetes cluster and deployments</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Amazon ECR</td>
+                                    <td>Stores and manages container images securely</td>
+                                  </tr>
+                                  <tr>
+                                    <td>AWS IAM</td>
+                                    <td>Grants EC2 access to ECR and other AWS services</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Cloud9 IDE</td>
+                                    <td>Develop and build container images</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Terraform</td>
+                                    <td>Automates infrastructure deployment</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              
+
+
+
+
+                        </p>
+        </div>
+
+
+        <a href="https://github.com/psuresh1seneca/clo835-assignment2" class="project-link" target="_blank">View on GitHub</a>
+    </div>
+</body>
+</html>

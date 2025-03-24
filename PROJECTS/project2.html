@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+    <style>
+        body {
+            font-family: futura;
+            margin: 0;
+            padding: 20px;
+            background-color: #39393A;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .project-title {
+            text-align: center;
+        }
+        
+        .project-description {
+            margin-top: 20px;
+        }
+
+        .project-overview {
+            text-align: justify;
+
+        }
+        .project-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        }
+
+        th, td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+        } 
+  
+        thead {
+        background-color: #f2f2f2;
+        }
+  
+        tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+        }
+  
+        tbody tr:hover {
+        background-color: #f1f1f1;
+        }
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="project-title"> Project: Configuration Management Automation with Ansible</h1>
+        <div class="project-description">
+                        <p>
+                            <b>Project Overview</b><br>
+                        <div class="project-overview">
+                          This project focuses on leveraging Ansible for configuration management automation by deploying a static web server on pre-provisioned Linux-based virtual machines in AWS. The goal is to ensure a repeatable, scalable, and reliable deployment process while utilizing dynamic inventory to adapt to cloud-based ephemeral infrastructure.
+
+<<br><b>Key Objectives:</b><br>
+Automate Web Server Deployment: Develop an Ansible playbook to install and configure a static website on 2 Ubuntu and 2 Amazon Linux EC2 instances in multiple availability zones.<br>
+
+Ensure Modularity & Scalability: Use Ansible roles, variables, and group-specific configurations to ensure a structured and scalable approach.<br>
+
+Implement Dynamic Inventory: Configure Ansible to use AWS dynamic inventory, allowing seamless adaptation to changes in the infrastructure without modifying static configurations.<br>
+
+Infrastructure as Code (IaC) Approach: Support DevOps best practices by managing infrastructure configurations programmatically.<br>
+
+Security Considerations: Implement preventive and detective security controls to enhance the security posture of the cloud infrastructure.<br>
+
+Demonstrate Automation Benefits: Compare Ansible’s automation with AWS EC2 User Data scripts and analyze the advantages in terms of scalability, repeatability, and security.<br>
+
+                            
+                        </div>
+
+                            <table>
+                                <thead>
+                                  <tr>
+                                    <th>Technology</th>
+                                    <th>Purpose</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Ansible</td>
+                                    <td>Configuration management and automation of server setup.</td>
+                                  </tr>
+                                  <tr>
+                                    <td>AWS Cloud9</td>
+                                    <td>Develop and build container images</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Amazon EC2</td>
+                                    <td>Hosts for the static website (Ubuntu & Amazon Linux).</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Terraform</td>
+                                    <td>Used to create EC2 instances</td> 
+                                  </tr>
+                                </tbody>
+                              </table>
+                              
+
+
+
+
+                        </p>
+        </div>
+
+
+        <a href="https://github.com/psuresh1seneca/Auto-Ansible"class="project-link" target="_blank">View on GitHub</a>
+    </div>
+</body>
+</html>
